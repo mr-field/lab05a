@@ -9,7 +9,7 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v4
         with:
-          java-version: ‘21’
-          distribution: ‘temurin’
+          java-version: '17'
+          distribution: 'temurin'
       - name: Test with Ant
         run: ant -noinput -buildfile Rational/build.xml test
